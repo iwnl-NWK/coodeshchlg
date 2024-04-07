@@ -1,0 +1,58 @@
+{
+    "NetworkAcl": {
+        "Associations": [],
+        "NetworkAclId": "${ACLID}",
+        "VpcId": "${VPCID}",
+        "Tags": [],
+        "Entries": [
+            {
+                "CidrBlock": "0.0.0.0/0",
+                "RuleNumber": 2,
+                "Protocol": "tcp",
+                "PortRange": [
+                    {"From: 22},
+                    {"To: 22}
+                ], 
+                "Ingress": true,
+                "RuleAction": "allow"
+            },
+            {
+                "CidrBlock": "0.0.0.0/0",
+                "RuleNumber": 3,
+                "Protocol": "-1",
+                "PortRange": [
+                    {"From: 80},
+                    {"To:80} 
+                ], 
+                "Ingress": true,
+                "RuleAction": "allow"
+            },
+            {
+                "CidrBlock": "0.0.0.0/0",
+                "RuleNumber": 4,
+                "Protocol": "-1",
+                "PortRange": [
+                    {"From: 443},
+                    {"To: 443} 
+                ], 
+                "Ingress": true,
+                "RuleAction": "allow"
+            },
+            {
+                "CidrBlock": "0.0.0.0/0",
+                "RuleNumber": 333,
+                "Protocol": "tcp",
+                "Egress": false,
+                "RuleAction": "deny"
+            },
+            {
+                "CidrBlock": "0.0.0.0/0",
+                "RuleNumber": 444,
+                "Protocol": "tcp",
+                "Egress": true,
+                "RuleAction": "deny"
+            }
+        ],
+        "IsDefault": true 
+    }
+}
