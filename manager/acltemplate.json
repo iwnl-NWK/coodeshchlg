@@ -10,8 +10,8 @@
                 "RuleNumber": 2,
                 "Protocol": "tcp",
                 "PortRange": [
-                    {"From: 22},
-                    {"To: 22}
+                    {"From": 22},
+                    {"To": 22}
                 ], 
                 "Ingress": true,
                 "RuleAction": "allow"
@@ -21,8 +21,8 @@
                 "RuleNumber": 3,
                 "Protocol": "-1",
                 "PortRange": [
-                    {"From: 80},
-                    {"To:80} 
+                    {"From": 80},
+                    {"To":80} 
                 ], 
                 "Ingress": true,
                 "RuleAction": "allow"
@@ -32,8 +32,8 @@
                 "RuleNumber": 4,
                 "Protocol": "-1",
                 "PortRange": [
-                    {"From: 443},
-                    {"To: 443} 
+                    {"From": 443},
+                    {"To": 443} 
                 ], 
                 "Ingress": true,
                 "RuleAction": "allow"
